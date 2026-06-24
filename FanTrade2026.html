@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanTrade 2026</title>
+    <link rel="stylesheet" href="FanTrade2026.css">
+</head>
+<body>
+    <header>
+        <h1>FanTrade 2026</h1>
+        <p>Football Fans Marketplace for FIFA World Cup 2026</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#sell">Sell</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Registration Card -->
+        <div class="card">
+            <h2>User Registration</h2>
+            <form id="registerForm" method="POST">
+                <input type="text" id="reg_name" name="name" placeholder="Enter Name" required>
+                <input type="email" id="reg_email" name="email" placeholder="Enter Email" required>
+                <input type="password" id="reg_password" name="password" placeholder="Enter Password" required>
+                <button type="submit" name="register">Register</button>
+                <div id="registerMsg"></div>
+            </form>
+        </div>
+
+        <!-- Login Card -->
+        <div class="card">
+            <h2>User Login</h2>
+            <form id="loginForm" method="POST">
+                <input type="email" id="login_email" name="email" placeholder="Enter Email" required>
+                <input type="password" id="login_password" name="password" placeholder="Enter Password" required>
+                <button type="submit" name="login">Login</button>
+                <div id="loginMsg"></div>
+            </form>
+        </div>
+
+        <!-- Add Product Card -->
+        <div class="card">
+            <h2>Upload Football Product</h2>
+            <form id="productForm" method="POST">
+                <input type="text" id="product_name" name="product_name" placeholder="Product Name" required>
+                <input type="text" id="price" name="price" placeholder="Price" required>
+                <input type="text" id="description" name="description" placeholder="Description" required>
+                <button type="submit" name="add_product">Add Product</button>
+                <div id="productMsg"></div>
+            </form>
+        </div>
+
+        <!-- Products Display -->
+        <h2>Football Products</h2>
+        <div id="productsContainer"></div>
+    </div>
+
+    <footer>
+        <p>FanTrade 2026 © 2026</p>
+    </footer>
+
+    <script src="FanTrade2026.js"></script>
+</body>
+</html>
